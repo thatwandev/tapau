@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --felt: #0C4A28;
+  --felt-light: #0F5C32;
+  --felt-dark: #0A3D20;
+  --card-face: #F0F4F1;
+  --card-border: #D8DDD9;
+  --emerald: #00A859;
+  --chip-scout: #F59E0B;
+  --chip-show: #38BDF8;
+}
+
+body {
+  background-color: var(--felt);
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #F0F4F1;
+  min-height: 100dvh;
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid #00A859;
+  outline-offset: 2px;
+}
+
+/* Hide scrollbar on all browsers while keeping scroll behaviour */
+.hide-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
